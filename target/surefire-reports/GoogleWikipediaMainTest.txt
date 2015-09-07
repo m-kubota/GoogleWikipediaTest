@@ -1,4 +1,11 @@
 -------------------------------------------------------------------------------
 Test set: GoogleWikipediaMainTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.48 sec - in GoogleWikipediaMainTest
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.878 sec <<< FAILURE! - in GoogleWikipediaMainTest
+GoogleWikipediaMainTest  Time elapsed: 0.875 sec  <<< ERROR!
+java.lang.IllegalStateException: No reports dir has been configured, you need to set in the config file or via the build adapter.
+	at geb.Browser.getReportGroupDir(Browser.groovy:884)
+	at geb.Browser.cleanReportGroupDir(Browser.groovy:917)
+	at geb.spock.GebSpec.methodMissing(GebSpec.groovy:56)
+	at geb.spock.GebReportingSpec.setupSpec(GebReportingSpec.groovy:33)
+
