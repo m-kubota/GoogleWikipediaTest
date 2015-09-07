@@ -15,7 +15,7 @@ class GoogleWikipediaMainTest extends GebReportingSpec {
 		at GoogleHomePage
 
 		when:
-		search.field.value("wikipedia")
+		search.field.value("Wikipedia")
 
 		then:
 		waitFor { at GoogleResultsPage }
